@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lista de Productos</title>
+  </head>
+  <body>
+    <form class="add-product">
+      <h2 class="form-title">Agregar Producto</h2>
+
+      <label for="nameProduct" class="form-label">Nombre:</label>
+      <input
+        type="text"
+        name="nameProduct"
+        id="nameProduct"
+        class="form-input"
+        placeholder="Ej: Fifa 27"
+      />
+      <label for="price" class="form-label">Precio:</label>
+      <input
+        type="number"
+        name="priceProduct"
+        id="price"
+        class="form-input"
+        placeholder="Ej: 230000"
+      />
+      <button type="submit" class="btn-add-product">Agregar</button>
+    </form>
+
+    <div class="container">
+      <table class="table-base table-hover">
+        <caption class="table-caption">
+          Lista de Productos
+        </caption>
+
+        <thead class="table-head">
+          <tr>
+            <th>id</th>
+            <th>nombre producto</th>
+            <th>precio</th>
+          </tr>
+        </thead>
+
+        <tbody class="data-products"></tbody>
+      </table>
+    </div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

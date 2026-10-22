@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ======= ESTILOS PARA EL FORMULARIO ======= */
+.add-product {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 100%;
+  max-width: 600px;
+  padding: 24px;
+
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+
+  font-family: Arial, sans-serif;
+  color: #334155;
+
+  box-shadow: 0 2px 8px rgb(15 23 42 / 5%);
+}
+
+/* Título */
+.form-title {
+  margin: 0 0 10px;
+  color: #0f112a;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Etiquetas */
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* Campos de entrada */
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+
+  background-color: #ffffff;
+  color: #334155;
+  font: inherit;
+  font-size: 14px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Placeholder */
+.form-input::placeholder {
+  color: #94a3b8;
+}
+
+/* Campo enfocado */
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgb(59 130 246 / 15%);
+}
+
+/* Botón */
+.btn-add-product {
+  margin-top: 8px;
+  padding: 11px 16px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #5aeb25;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-add-product:hover {
+  background-color: #5ed81d;
+}
+
+.btn-add-product:active {
+  transform: scale(0.98);
+}
+
+.btn-add-product:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+/* ======= ESTILOS PARA LA TABLA ======= */
+.container {
+  width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #064ef51a;
+  border-radius: 12px;
+}
+
+/* Tabla principal */
+.table-base {
+  width: 800px;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #334155;
+  background-color: #ffffff;
+}
+
+/* Título de la tabla */
+.table-caption {
+  caption-side: top;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #004cfd;
+  text-transform: uppercase;
+}
+
+/* Encabezado */
+.table-head {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  text-transform: uppercase;
+}
+
+.table-base th,
+.table-base td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table-base th {
+  font-weight: 600;
+}
+
+/* Filas alternadas */
+.table-base tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* Efecto al pasar el cursor */
+.table-hover tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e1ebfb;
+}
+
+/* Bordes completos */
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 600px) {
+  .add-product {
+    max-width: 400px;
+  }
+
+  .container {
+    max-width: 500px;
+  }
+}
